@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yalinnette Hair Studio - Citas</title>
+    <meta name="description" content="" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="bg-gray-100 bg-center bg-cover"
+    style="background-image: url('hairdresser.webp')"
+  >
+    <nav
+      class="bg-pink-200 text-dark p-5 sticky z-50 top-0 flex justify-between items-center"
+    >
+      <a href="#" class="text-2xl font-italic font-bold py-2 px-4 rounded-full"
+        >Yalinnette Hair Studio</a
+      >
+      <input type="checkbox" id="menu-toggle" class="hidden md:hidden" />
+      <label for="menu-toggle" class="cursor-pointer md:hidden">
+        <i class="bx bx-menu text-3xl"></i>
+      </label>
+      <ul id="menu" class="hidden md:flex space-x-7">
+        <li>
+          <a
+            href="index.html"
+            class="font-bold text-black-700 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-full"
+            >Inicio</a
+          >
+        </li>
+        <li>
+          <a
+            href="venta.html"
+            class="font-bold text-black hover:bg-blue-500 thover:text-white px-4 py-2 rounded-full"
+            >Tienda</a
+          >
+        </li>
+        <li>
+          <a
+            href="blog.html"
+            class="font-bold text-black hover:bg-blue-500 hover:text-white px-4 py-2 rounded-full"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a
+            href="contacto.html"
+            class="font-bold text-black hover:bg-blue-500 hover:text-white px-4 py-2 rounded-full"
+            >Contacto</a
+          >
+        </li>
+        <li>
+          <a
+            href="citas.html"
+            class="font-bold bg-blue-500 text-black hover:bg-blue-900 hover:text-white px-4 py-2 rounded-full"
+            >Reservar Cita</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div
+      id="menu-popup"
+      class="hidden bg-pink-200 text-dark p-5 absolute top-0 right-0 mt-16 z-50"
+    >
+      <ul class="flex flex-col space-y-4">
+        <li>
+          <a
+            href="inicio.html"
+            class="font-bold text-black-700 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-full"
+            >Inicio</a
+          >
+        </li>
+        <li>
+          <a
+            href="venta.html"
+            class="font-bold text-black hover:bg-blue-500 hover:text-white px-4 py-2 rounded-full"
+            >Tienda</a
+          >
+        </li>
+        <li>
+          <a
+            href="blog.html"
+            class="font-bold text-black hover:bg-blue-500 hover:text-white px-4 py-2 rounded-full"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a
+            href="contacto.html"
+            class="font-bold text-black hover:bg-blue-500 hover:text-white px-4 py-2 rounded-full"
+            >Contacto</a
+          >
+        </li>
+        <li>
+          <a
+            href="citas.html"
+            class="font-bold bg-blue-500 text-black hover:bg-blue-900 hover:text-white px-4 py-2 rounded-full"
+            >Reservar Cita</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div
+      class="container mx-auto mt-8 p-8 bg-pink-200 rounded-lg shadow-md max-w-md"
+    >
+      <form action="/submit" method="post">
+        <label for="fname" class="block mb-2">Nombre:</label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          required
+          class="block w-full border-gray-300 rounded-md mb-4 focus:ring-pink-500 focus:border-pink-500"
+        />
+
+        <label for="lname" class="block mb-2">Apellido:</label>
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          required
+          class="block w-full border-gray-300 rounded-md mb-4 focus:ring-pink-500 focus:border-pink-500"
+        />
+
+        <label for="service_date" class="block mb-2">Fecha del Servicio:</label>
+        <input
+          type="date"
+          id="service_date"
+          name="service_date"
+          required
+          class="block w-full border-gray-300 rounded-md mb-4 focus:ring-pink-500 focus:border-pink-500"
+        />
+
+        <label for="service_type" class="block mb-2">Servicio:</label>
+        <select
+          id="service_type"
+          name="service_type"
+          class="block w-full border-gray-300 rounded-md mb-4 focus:ring-pink-500 focus:border-pink-500"
+        >
+          <option value="peinado">Peinado</option>
+          <option value="blower">Blower</option>
+          <option value="alisado">Alisado</option>
+          <option value="corte">Corte</option>
+          <option value="vivaceli">Vivaceli</option>
+        </select>
+
+        <label for="phone" class="block mb-2">Teléfono:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          required
+          class="block w-full border-gray-300 rounded-md mb-4 focus:ring-pink-500 focus:border-pink-500"
+        />
+
+        <label for="note" class="block mb-2">Nota:</label>
+        <textarea
+          id="note"
+          name="note"
+          rows="4"
+          cols="50"
+          class="block w-full border-gray-300 rounded-md mb-4 focus:ring-pink-500 focus:border-pink-500"
+        ></textarea>
+
+        <input
+          type="checkbox"
+          id="subscribe"
+          name="subscribe"
+          value="yes"
+          class="mb-4"
+        />
+        <label for="subscribe">Suscribirse a nuestro boletín informativo</label>
+
+        <input
+          type="submit"
+          value="Enviar"
+          class="bg-green-500 text-white px-8 py-4 rounded-md hover:bg-green-900"
+        />
+      </form>
+    </div>
+
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          var menuPopup = document.getElementById("menu-popup");
+          if (menuPopup.classList.contains("hidden")) {
+            menuPopup.classList.remove("hidden");
+          } else {
+            menuPopup.classList.add("hidden");
+          }
+        });
+    </script>
+
+    <footer
+      class="bg-pink-200 text-black-900 p-4 mt-auto"
+      style="margin-top: 100px"
+    >
+      <div class="container mx-auto text-center">
+        <p>
+          &copy; 2024 Yalinnette Hair Studio. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

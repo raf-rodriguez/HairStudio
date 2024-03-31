@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yalinnette Hair Studio - Mi Blog</title>
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <body class="bg-gray-100">
+      <header>
+          <nav class="navbar">
+              <a class="navbar-brand" href="#">Yalinnette Hair Studio</a>
+              <input type="checkbox" id="menu-toggle" class="hidden">
+              <label for="menu-toggle" class="cursor-pointer md:hidden">
+                  <i class="bx bx-menu text-3xl"></i>
+              </label>
+              <ul class="navbar-nav hidden md:flex space-x-7">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="venta.html">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                  <li id="cita" class="nav-item">
+                      <a class="nav-link" href="citas.html">Reservar Cita</a>
+                  </li>
+              </ul>
+          </nav>
+      </header>
+  
+      <div id="menu-popup" class="hidden bg-pink-200 p-5 absolute top-0 right-0 mt-16 z-50">
+          <ul class="navbar-nav-popup flex flex-col space-y-4">
+              <li class="nav-item">
+                  <a class="nav-link" href="inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="venta.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li id="cita-popup" class="nav-item">
+                  <a class="nav-link" href="citas.html">Reservar Cita</a>
+              </li>
+          </ul>
+      </div>    
+
+    <main>
+      <section id="blogs" class="blogs-post-container">
+          <h2 class="blogs-post-titulo-post">Bienvenidos a mi blogs</h2>
+          <p id="parafo" class="parafo">Aqui se enteraran de lo ultino en los productos, procesos y talleres.</p>
+          <article class="post-container">
+            <img
+              src="shampoo.webp" alt=""/>
+            
+            <h3>Titulo del Blogpost</h3>
+            <p>
+              Texto de intro. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Vitae ut natus voluptatum sint voluptatem, libero porro
+              ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Vitae ut natus voluptatum sint voluptatem, libero porro ratione
+            </p>
+            <a href="blog.html" class="blogs-button">Leer más</a>
+          </article>
+          <article class="post-container">
+            <img
+              src="trusspjpg.jpg" alt=""/>
+
+            <h3>Titulo del Blogpost</h3>
+            <p>
+              Texto de intro. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Vitae ut natus voluptatum sint voluptatem, libero porro
+              ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Vitae ut natus voluptatum sint voluptatem, libero porro ratione
+            </p>
+            <a href="blog.html" class="blogs-button">Leer más</a>
+          </article>
+          <article class="post-container">
+            <img src="maquillaje1.jpg" alt="" />
+
+            <h3>Titulo del Blogpost</h3>
+            <p>
+              Texto de intro. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Vitae ut natus voluptatum sint voluptatem, libero porro
+              ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Vitae ut natus voluptatum sint voluptatem, libero porro ratione
+            </p>
+            <a href="blog.html" class="blogs-button">Leer más</a>
+          </article>
+
+          <article class="post-container">
+            <img
+              src="manicura.jpg" alt=""/>
+
+            <h3>Titulo del Blogpost</h3>
+            <p>
+              Texto de intro. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Vitae ut natus voluptatum sint voluptatem, libero porro
+              ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Vitae ut natus voluptatum sint voluptatem, libero porro ratione
+            </p>
+            <a href="blog.html" class="blogs-button">Leer más</a>
+          </article>
+          <article class="post-container">
+            <img src="OIP.jpg" alt=""/>
+
+            <h3>Titulo del Blogpost</h3>
+            <p>
+              Texto de intro. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Vitae ut natus voluptatum sint voluptatem, libero porro
+              ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Vitae ut natus voluptatum sint voluptatem, libero porro ratione
+            </p>
+            <a href="blog.html" class="blogs-button">Leer más</a>
+          </article>
+        </div>
+      </section>
+    </main>
+    <div id="redes" class="redes">
+      <h2>Contactanos</h2>
+      <p>Siguenoes en las redes sociales</p>
+      <div class="redes-iconos">
+          <div class="flex justify-center mt-4">
+              <a href="https://www.instagram.com/" class="mx-4">
+                  <div class="icon inline-block rounded-full p-2 transition duration-300 ease-in-out transform hover:scale-110 hover:bg-red-500 hover:text-white">
+                      <i class='bx bxl-instagram text-4xl text-white'></i>
+                  </div>
+              </a>
+              <a href="https://www.facebook.com/" class="mx-4">
+                  <div class="icon inline-block rounded-full p-2 transition duration-300 ease-in-out transform hover:scale-110 hover:bg-blue-500 hover:text-white">
+                      <i class='bx bxl-facebook-circle text-4xl text-white'></i>
+                  </div>
+              </a>
+          </div>
+      </div>
+  </div>
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+             var menuPopup = document.getElementById("menu-popup");
+             if (menuPopup.classList.contains("hidden")) {
+                 menuPopup.classList.remove("hidden");
+             } else {
+                 menuPopup.classList.add("hidden");
+             }
+         });    
+ </script>
+    <footer>
+        <p>&copy; 2024 Yalinnette Hair Studio. Todos los derechos reservados.</p>
+    </footer>
+</body>
+  </body>
+</html>
+

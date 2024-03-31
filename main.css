@@ -1,0 +1,162 @@
+/* Estilos base */
+
+/* Estilos de blog */
+.blogs-post-titulo-post {
+  padding-bottom: 2vh; 
+  text-align: center;
+  color: #e60073; 
+  font-size: 2.4rem; 
+}
+
+.parafo {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #e60073;
+}
+
+.blogs-button {
+  border: 1px solid #e60073;
+  padding: 1vh 1.5vh; 
+  font-size: 1.2rem; 
+  font-weight: 500;
+  width: 6rem; 
+  color: white; 
+}
+
+.blogs-post-container .post-container {
+  display: inline-block;
+  color: white;
+  padding-left: 1rem; 
+  max-width: 30%;
+  margin-bottom: 5vh; 
+}
+
+.blogs-post-container .post-container p {
+  margin-bottom: 3.5vh; 
+  color: white; 
+}
+
+.blogs-post-container .post-container img {
+  width: 30%; 
+}
+
+.post-container {
+  transition: transform 0.3s ease;
+}
+
+.post-container:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos de página de contacto */
+.contact-info {
+  color: white; 
+  margin: 4rem auto;
+  border-radius: 1rem;
+  width: 35%;
+  padding: 1rem;
+  text-align: center; 
+}
+
+.contact h2 {
+  color: #e60073;
+  font-size: 2em;
+  margin-top: 6rem;
+}
+
+.contact h3 {
+  color: #e60073;
+  font-size: 2em;
+}
+
+#social {
+  text-align: center; 
+  margin-top: 2rem; 
+  font-size: 1.6rem; 
+  color: #e60073; 
+}
+
+.contact p {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* Estilos para el formulario de contacto */
+#contact-form {
+  background-color: rgb(251, 207, 232);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center; 
+  max-width: 600px; 
+  margin: 4rem auto;
+}
+
+.form h2 {
+  color: #333;
+  font-size: 1.5rem;
+}
+
+#form form {
+  margin-top: 1rem;
+}
+
+#form label {
+  display: block;
+  font-weight: bold;
+  text-align: left; 
+}
+
+#form input[type="text"],
+#form input[type="tel"],
+#form input[type="email"],
+#form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  border: 0 solid #ccc;
+  box-sizing: border-box;
+}
+
+.form input[type="submit"] {
+  width: 40%; 
+  padding: 1vh; 
+  background-color: rgb(11, 168, 11);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 0 auto; 
+}
+
+.form input[type="submit"]:hover {
+  background-color: rgb(4, 67, 4);
+  color:white;
+}
+
+/* Hide the navigation bar by default */
+#navbar {
+  display: none;
+}
+
+/* Show the navigation bar when the toggle is checked */
+#menu-toggle:checked ~ #navbar {
+  display: block;
+}
+
+/* Hide the navigation bar items when the toggle is checked */
+#menu-toggle:checked ~ #navbar .nav-item {
+  display: none;
+}
+
+/* Show the navigation bar items when the toggle is checked */
+#menu-toggle:checked ~ #navbar .nav-item.active {
+  display: block;
+}
+
+
+

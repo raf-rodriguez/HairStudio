@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yalinnette Hair Studio - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+   
+</head>
+<body class="bg-gray-100 bg-center bg-cover" style="background-image: url('hairdresser.webp');">
+
+    <nav class="bg-pink-200 text-dark p-5 sticky z-50 top-0 flex justify-between items-center">
+        <a href="#" class="text-2xl font-italic font-bold py-2 px-4 rounded-full">Yalinnette Hair Studio</a>
+        <input type="checkbox" id="menu-toggle" class="hidden md:hidden">
+        <label for="menu-toggle" class="cursor-pointer md:hidden">
+            <i class="bx bx-menu text-3xl"></i>
+        </label>
+        <ul id="menu" class="hidden md:flex space-x-7">
+            <li><a href="index.html" class="font-bold text-black-700 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-full">Inicio</a></li>
+            <li><a href="venta.html" class="font-bold text-black hover:bg-blue-500 thover:text-white px-4 py-2 rounded-full">Tienda</a></li>
+            <li><a href="blog.html" class="font-bold text-black hover:bg-blue-500 hover:text-white px-4 py-2 rounded-full">Blog</a></li>
+            <li><a href="contacto.html" class="font-bold text-black hover:bg-blue-500 hover:text-white px-4 py-2 rounded-full">Contacto</a></li>
+            <li><a href="citas.html" class="font-bold bg-blue-500 text-black hover:bg-blue-900 hover:text-white px-4 py-2 rounded-full">Reservar Cita</a></li>
+        </ul>
+    </nav>
+    
+    <div id="menu-popup" class="hidden bg-pink-200 text-dark p-5 absolute top-0 right-0 mt-16 z-50">
+        <ul class="flex flex-col space-y-4">
+            <li><a href="inicio.html" class="font-bold text-black-700 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-full">Inicio</a></li>
+            <li><a href="venta.html" class="font-bold text-black hover:bg-blue-500 hover:text-white px-4 py-2 rounded-full">Tienda</a></li>
+            <li><a href="blog.html" class="font-bold text-black hover:bg-blue-500 hover:text-white px-4 py-2 rounded-full">Blog</a></li>
+            <li><a href="contacto.html" class="font-bold text-black hover:bg-blue-500 hover:text-white px-4 py-2 rounded-full">Contacto</a></li>
+            <li><a href="citas.html" class="font-bold bg-blue-500 text-black hover:bg-blue-900 hover:text-white px-4 py-2 rounded-full">Reservar Cita</a></li>
+        </ul>
+    </div>
+
+<header class="relative">
+    <video id="full-screen-video" autoplay muted loop class="w-full h-full object-cover z-0">
+        <source src="Beauty salon promo.mp4" type="video/mp4">
+    </video>
+    <div id="appointment-container" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black rounded-lg p-8 text-center z-10">
+        <h2 class="text-2xl font-bold text-pink-700 mb-4">Separa tu cita</h2>
+        <p class="text-lg text-white mb-6">¡Agenda ahora y asegura tu cita!</p>
+        <button onclick="toggleForm()" class="bg-pink-300 text-black px-6 py-3 rounded-lg shadow-lg">Agendar Cita</button>
+    </div>
+</header>
+
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-pink-300 p-8 rounded-lg shadow-lg" id="appointmentForm" style="max-width: 300px; display: none;">
+  <h2 class="mb-4 text-dark font-bold py-2 px-4 rounded-full">Agendar Cita</h2>
+    <form action="#" method="post">
+        <label for="name" class="form-label">Nombre:</label>
+        <input type="text" id="name" name="name" class="block w-full border-gray-300 rounded-md mb-4 focus:ring-pink-500 focus:border-pink-500">
+        <label for="service" class="form-label">Servicio:</label>
+        <input type="text" id="service" name="service" class="block w-full border-gray-300 rounded-md mb-4 focus:ring-pink-500 focus:border-pink-500">
+        <select id="service_type" name="service_type" class="block w-full border-gray-300 rounded-md mb-4 focus:ring-pink-500 focus:border-pink-500">
+            <option value="peinado">Peinado</option>
+            <option value="blower">Blower</option>
+            <option value="alisado">Alisado</option>
+            <option value="corte">Corte</option>
+            <option value="vivaceli">Vivaceli</option>
+        </select>
+        <label for="date" class="form-label">Fecha:</label>
+        <input type="date" id="date" name="date" class="block w-full border-gray-300 rounded-md mb-4 focus:ring-pink-500 focus:border-pink-500">
+        <label for="phone" class="form-label">Teléfono:</label>
+        <input type="tel" id="phone" name="phone" class="block w-full border-gray-300 rounded-md mb-4 focus:ring-pink-500 focus:border-pink-500">
+        <label for="time" class="form-label">Hora:</label>
+        <input type="time" id="time" name="time" class="block w-full border-gray-300 rounded-md mb-4 focus:ring-pink-500 focus:border-pink-500">
+        <button type="submit" class="bg-red-600 w-full px-8 py-4 hover:bg-red-800 rounded-md btn-success">Enviar</button>
+    </form>
+</div>
+
+<main>
+    <section id="services" class="py-12 bg-pink-300 text-dark">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold mb-4">Mensaje</h2>
+                <p class="mx-auto font-bold py-2 px-4 ">
+                    La belleza es un poema sin palabras, una melodía que acaricia el alma y una obra de arte que se encuentra en todas partes. 
+                    Desde el resplandor de un amanecer hasta el destello en los ojos de quienes amamos, la belleza nos rodea y nos invita a 
+                    maravillarnos ante la maravilla del mundo que nos rodea. Sin embargo, la verdadera belleza trasciende lo físico; reside en 
+                    la profundidad de nuestros corazones y en la bondad que compartimos con el mundo. Es la sonrisa que ilumina un rostro, el 
+                    gesto amable hacia los demás y la compasión que brilla en nuestros actos cotidianos. Recordemos siempre que la belleza más 
+                    radiante es aquella que emana de la autenticidad y la aceptación de uno mismo. Cultivemos la belleza interior y dejemos que 
+                    brille a través de nuestras acciones y palabras, transformando el mundo que nos rodea con su luminosidad.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-12 bg-white">
+        <div class="overflow-hidden">
+            <div class="shadow-lg transform hover:-translate-y-1 duration-300 rounded-lg p-6">
+                <h3 class="text-xl text-pink-600 font-bold mb-2">Sobre Nosotros</h3>
+                <p class="text-dark-700">En Yalinnette Hair Studio, ofrecemos una amplia gama de servicios de belleza para satisfacer todas tus necesidades de cuidado personal. 
+                    Desde cortes de pelo modernos hasta elegantes peinados, desde tratamientos de coloración hasta relajantes servicios de cuidado capilar, nuestrom talentoso equipo 
+                    de estilistas está aquí para ayudarte a lograr el look que deseas. Con una atención personalizada y un enfoque en la calidad y la excelencia en el servicio, 
+                    te garantizamos una experiencia de belleza única y satisfactoria en cada visita. ¡Déjanos cuidar de ti y realzar tu elleza natural en Yalinnette Hair Studio!.</p> 
+            </div>
+
+        <div class="shadow-lg transform hover:-translate-y-1 duration-300 rounded-lg p-6">
+            <h3 class="text-xl text-pink-600 font-bold mb-2">Nuestros Productos</h3>
+            <p class="text-dark-700">¡Descubre la excelencia en cada producto con nuestra gama de productos Truss, Redken y más! Sumérgete en un mundo de belleza capilar donde 
+                la calidad y la innovación se unen para ofrecerte resultados excepcionales. Desde los cuidados intensivos hasta el estilo más audaz, nuestros productos están 
+                diseñados para satisfacer todas tus necesidades capilares. Con Truss, experimentarás la fuerza y el rejuvenecimiento que tu cabello merece, mientras que Redken 
+                te ofrece la última tecnología en coloración y cuidado del cabello. Ya sea que busques fortalecer, hidratar, reparar o simplemente transformar tu cabello, tenemos 
+                la solución perfecta para ti. Nuestros productos han sido formulados con los mejores ingredientes para brindarte resultados visibles desde el primer uso. Eleva tu 
+                experiencia de cuidado capilar a un nivel superior con nuestra selección de productos Truss, Redken y más. ¡Descubre tu mejor cabello hoy mismo!.</p> 
+            </div>
+    </section>
+
+    <section id="services" class="py-12 bg-black-400">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-pink-700 mb-8">Nuestros Servicios</h2>
+            <div class="grid grid-cols-4 gap-6">
+                <div class="bg-stone-300 transform hover:-translate-y-1 duration-300 rounded-lg shadow-md overflow-hidden">
+                    <img src="OIP.jpg" alt="Spa" class="w-full h-auto">
+                    <div class="p-4">
+                        <h3 class="text-pink-700 text-xl font-bold mb-2">Spa</h3>
+                        <p class="text-white">Disfruta de nuestros tratamientos de spa diseñados para relajar cuerpo y mente.</p>
+                    </div>
+                </div>
+                <div class="bg-stone-300 transform hover:-translate-y-1 duration-300 rounded-lg shadow-md overflow-hidden">
+                    <img src="manicura.jpg" alt="Pedicura" class="w-full h-auto">
+                    <div class="p-4">
+                        <h3 class="text-xl text-pink-700 font-bold mb-2">Manicura</h3>
+                        <p class="text-white">Consiente tus pies con nuestros servicios de pedicura profesionales.</p>
+                    </div>
+                </div>
+                <div class="bg-stone-300 transform hover:-translate-y-1 duration-300 rounded-lg shadow-md overflow-hidden">
+                    <img src="QL80_.jpg" alt="Uñas" class="w-full h-auto">
+                    <div class="p-4">
+                        <h3 class="text-xl text-pink-700 font-bold mb-2">Productos</h3>
+                        <p class="text-white">Embellece tu cabello, fortalecelo y queda brillante.</p>
+                    </div>
+                </div>
+                <div class="bg-stone-300 transform hover:-translate-y-1 duration-300 rounded-lg shadow-md overflow-hidden">
+                    <img src="maquillaje1.jpg" alt="Maquillaje" class="w-full h-auto">
+                    <div class="p-4">
+                        <h3 class="text-xl text-pink-700 font-bold mb-2">Maquillaje</h3>
+                        <p class="text-white">Resalta tu belleza natural con nuestros servicios de maquillaje profesionales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>      
+    <div class="flex flex-col items-center justify-center mt-20">
+        <h2 class="text-2xl text-pink-700 mb-2">Contactanos</h2>
+        <p class="text-xl text-white">Siguenos en las redes sociales</p>
+    </div>
+    <div class="flex justify-center mt-4">
+        <a href="https://www.instagram.com/" class="mx-4">
+            <div class="icon inline-block rounded-full p-2 transition duration-300 ease-in-out transform hover:scale-110 hover:bg-red-500 hover:text-white">
+                <i class='bx bxl-instagram text-4xl text-white'></i>
+            </div>
+        </a>
+        <a href="https://www.facebook.com/" class="mx-4">
+            <div class="icon inline-block rounded-full p-2 transition duration-300 ease-in-out transform hover:scale-110 hover:bg-blue-500 hover:text-white">
+                <i class='bx bxl-facebook-circle text-4xl text-white'></i>
+            </div>
+        </a>
+    </div>          
+</main>
+
+<footer class="bg-pink-200 text-black-900 p-4 mt-8">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2024 Yalinnette Hair Studio. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script>
+     function toggleForm() {
+        var appointmentForm = document.getElementById("appointmentForm");
+        appointmentForm.style.display = appointmentForm.style.display === "none" ? "block" : "none";
+    }
+
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+        var menuPopup = document.getElementById("menu-popup");
+        if (menuPopup.classList.contains("hidden")) {
+            menuPopup.classList.remove("hidden");
+        } else {
+            menuPopup.classList.add("hidden");
+        }
+    });
+</script>
+
+</body>
+</html>

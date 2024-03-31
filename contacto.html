@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yalinnette Hair Studio - Contacto</title>
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <body class="bg-gray-100">
+        <header>
+            <nav class="navbar">
+                <a class="navbar-brand" href="#">Yalinnette Hair Studio</a>
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="cursor-pointer md:hidden">
+                    <i class="bx bx-menu text-3xl"></i>
+                </label>
+                <ul class="navbar-nav hidden md:flex space-x-7">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="venta.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li id="cita" class="nav-item">
+                        <a class="nav-link" href="citas.html">Reservar Cita</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <div id="menu-popup" class="hidden bg-pink-200 p-5 absolute top-0 right-0 mt-16 z-50">
+            <ul class="navbar-nav-popup flex flex-col space-y-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="venta.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li id="cita-popup" class="nav-item">
+                    <a class="nav-link" href="citas.html">Reservar Cita</a>
+                </li>
+            </ul>
+        </div>    
+    
+<main class="container mx-auto flex">
+    <form id="contact-form" class="form p-4 bg-gray-100 rounded-lg shadow-md w-full sm:w-96" action="#" method="post">
+        <h2 class="text-lg font-semibold mb-4">Contacto</h2>
+        <label for="nombre" class="block mb-2">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" class="w-full px-4 py-2 mb-4 rounded-md border border-gray-300">
+        
+        <label for="telefono" class="block mb-2">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" class="w-full px-4 py-2 mb-4 rounded-md border border-gray-300">
+        
+        <label for="email" class="block mb-2">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" class="w-full px-4 py-2 mb-4 rounded-md border border-gray-300">
+        
+        <label for="mensaje" class="block mb-2">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" class="w-full px-4 py-2 mb-4 rounded-md border border-gray-300"></textarea>
+        
+        <input type="submit" value="Enviar" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md">
+    </form>
+
+    <aside class="contact-info ml-4">
+        <div id="contact" class="contact">
+            <h2 class="text-lg font-semibold mb-2">Dirección</h2>
+            <p>Carr 918 km 4.5 bo. placita, Las Piedras</p>
+            
+            <h3 class="text-lg font-semibold mt-4 mb-2">Teléfono</h3>
+            <p>787-999-0000</p>
+        </div>
+        <p id="social" class="social text-lg font-semibold mt-4">Siguenos en las redes sociales</p>
+        <div class="redes-iconos flex justify-center mt-4">
+            <a href="https://www.instagram.com/" class="mx-4">
+                <div class="icon inline-block rounded-full p-2 transition duration-300 ease-in-out transform hover:scale-110 hover:bg-red-500 hover:text-white">
+                    <i class='bx bxl-instagram text-4xl text-white'></i>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/" class="mx-4">
+                <div class="icon inline-block rounded-full p-2 transition duration-300 ease-in-out transform hover:scale-110 hover:bg-blue-500 hover:text-white">
+                    <i class='bx bxl-facebook-circle text-4xl text-white'></i>
+                </div>
+            </a>
+        </div>
+    </aside>
+
+<script>
+   document.getElementById("menu-toggle").addEventListener("click", function() {
+            var menuPopup = document.getElementById("menu-popup");
+            if (menuPopup.classList.contains("hidden")) {
+                menuPopup.classList.remove("hidden");
+            } else {
+                menuPopup.classList.add("hidden");
+            }
+        });    
+</script>
+    <footer class="text-center mt-8">
+        <p>&copy; 2024 Yalinnette Hair Studio. Todos los derechos reservados.</p>
+    </footer>
+</main>
+
+</body>
+</html>
