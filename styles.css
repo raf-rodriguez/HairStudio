@@ -10,9 +10,14 @@ body {
 }
 
 header {
-    background-color: rgb(251 207 232); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(251, 207, 232);
     color: #000000;
-    font-weight: bold; 
+    font-weight: bold;
     padding: 20px;
     text-align: center;
 }
